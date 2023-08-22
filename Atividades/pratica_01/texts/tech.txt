@@ -1,0 +1,20 @@
+Java: Linguagem de programação versátil e amplamente usada no ensino e desenvolvimento de software.
+Python: Uma linguagem de programação de fácil aprendizado, comumente usada em cursos introdutórios.
+C/C++: Linguagens de programação populares, usadas em muitos cursos de ciência da computação.
+HTML/CSS: Tecnologias fundamentais para o desenvolvimento de páginas web.
+JavaScript: Linguagem de programação usada para adicionar interatividade às páginas web.
+SQL: Linguagem de consulta usada para gerenciar bancos de dados relacionais.
+Linux: Sistema operacional de código aberto amplamente usado no desenvolvimento e ensino.
+Git: Sistema de controle de versão, fundamental para colaboração em projetos de código aberto.
+R: Linguagem de programação usada para estatísticas e análise de dados.
+MATLAB: Ambiente de computação numérica usado em várias áreas da engenharia e ciências.
+Docker: Plataforma de contêiner amplamente usada para criação e implantação de aplicativos.
+Virtualização: Tecnologia para criar ambientes virtuais isolados em um único sistema físico.
+Machine Learning e IA: Ferramentas e linguagens como TensorFlow e scikit-learn usadas para pesquisa em aprendizado de máquina e inteligência artificial.
+Big Data: Tecnologias como Hadoop e Spark usadas para processamento de dados em larga escala.
+Redes de Computadores: Conceitos e ferramentas para projetar e administrar redes.
+Segurança da Informação: Ferramentas e práticas para proteger sistemas e dados.
+Realidade Virtual e Aumentada: Tecnologias imersivas usadas em design, simulações e educação.
+Desenvolvimento de Aplicativos Móveis: Plataformas como Android Studio e Swift para desenvolver aplicativos para dispositivos móveis.
+Cloud Computing: Plataformas como AWS, Azure e Google Cloud usadas para hospedar aplicativos e serviços.
+Desenvolvimento Web Full Stack: Compreensão de tecnologias tanto do lado do cliente quanto do lado do servidor.

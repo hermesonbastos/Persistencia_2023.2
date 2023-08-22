@@ -1,49 +1,33 @@
-import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class Q1 {
-    public static void main(String[] args) {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-        String filePath;
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
 
-        Boolean close = false;
-        int op = 0;
-
-        while(!close){
-            System.out.println("Digite 1 para ler um arquivo.");
-            System.out.println("Digite 2 para sair.");
-            op = sc.nextInt();
-            sc.nextLine();
-
-            switch(op){
-                case 1:
-                    try {
-                        System.out.print("\033[H\033[2J");
-                        System.out.flush();
-                        System.out.println("Digite o nome do arquivo a ser lido: ");
-                        String fileName = sc.nextLine();
-                        filePath = "alt/texts/" + fileName;
-                        File file = new File(filePath);
-                        Scanner re = new Scanner(file);
-                        for(int i = 0; i < 10; i++) {
-                            String line = re.nextLine();
-                            System.out.println((i + 1) + ". " + line);
-                        }
-                        System.out.println("\n\n");
-                        re.close();
-                    }
-                    catch (FileNotFoundException e) {
-                        System.out.println("Erro ao ler arquivo:" + e);
-                    }
-                break;
-                case 2:
-                    close = true;
-            }
+        if (args.length != 1) {
+            System.out.println("Por favor, use: java Q1.java <nomeDoArquivo>");
+            return;
         }
 
-        sc.close();
+        try (InputStream is = new FileInputStream("texts/" + args[0])) {
+            InputStreamReader isr = new InputStreamReader(is);
+            BufferedReader br = new BufferedReader(isr);
+            String line;
+            int x = 0;
+
+            while((line = br.readLine()) != null && x < 10) {
+                System.out.println(line);
+                x++;
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Arquivo não encontrado!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
