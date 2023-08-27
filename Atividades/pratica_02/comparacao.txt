@@ -1,0 +1,3 @@
+-- Comparar o tempo de cópia de arquivos grandes usando a Questão 1 e a Questão 2.
+
+    Apesar do texto lido e escrito na Q2 ser maior que o da Q1, a leitura em buffer se mostra bem mais eficiente do que a leitura byte a byte. O tempo de execução da Q1(byte a byte) fica por volta de 7ms e 8ms enquanto a leitura da Q2(buffer) chega a ser menor que 1ms. Creio que isso acontece pois a leitura byte a byte necessita de uma chamada de sistema para cada byte lido enquanto a leitura em buffer aproveita da memória principal do computador(RAM) para preparar pedaços de bytes maiores para a leitura.
