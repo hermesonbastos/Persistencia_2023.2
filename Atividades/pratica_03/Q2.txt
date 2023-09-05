@@ -1,0 +1,37 @@
+2. Escolha e baixe um arquivo csv a partir do link e use-o nas questões a seguir. Na resolução desta questão, não enviar os arquivos envolvidos, mas somente os resultados pedidos em arquivo texto com extensão txt. Envie somente o link do arquivo CSV escolhido.
+
+Gere as somas checksum, md5, sha1 e sha256 do arquivo csv escolhido, usando utilitários de linha de comando do próprio sistema operacional ou instalado nele.
+Compare os tempos de execução e tamanhos dos arquivos gerados. Dica: para obter o tempo de execução, use o comando time.
+Exemplo: time md5sum iris.csv
+
+--------------------------------------------------------------------------------
+
+link: https://zenodo.org/record/3469741/files/2014_01-Traffic_Sensors_Fortaleza.csv?download=1
+
+checksum: 3483368985 48
+md5: 75c9e7b5dd6548ebf9d879937905931c
+sha1: aa0cca517cc4261cb28a8b0829e6e75e8ecd589d
+sha256: f93284377a3856f3b5ce72ea88bbab45fe7ead8dba64efa0a2ba6accd994d9de
+
+time checksum:
+real    0m0.043s
+user    0m0.000s
+sys     0m0.031s
+
+time md5:
+real    0m0.824s
+user    0m0.734s
+sys     0m0.094s
+
+time sha1:
+real    0m0.791s
+user    0m0.625s
+sys     0m0.156s
+
+time sha256:
+real    0m1.866s
+user    0m1.703s
+sys     0m0.172s
+
+size: total 223M
+-rw-r--r-- 1 hermeson hermeson 223M Aug 27 18:59 '2014_01-Traffic_Sensors_Fortaleza.csv?download=1'
